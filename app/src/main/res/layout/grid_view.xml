@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_xxhdpi"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchMode="columnWidth"
+        android:numColumns="2"
+        />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/message_layout_no_videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textview_lib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="No video files detected, you can search for them manually by pressing"
+            android:textColor="@color/colorPrimary"
+            android:textSize="27sp"
+            />
+
+        <Button
+            android:id="@+id/button_open_folders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Here"
+            android:clickable="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="27sp" />
+    </LinearLayout>
+</FrameLayout>

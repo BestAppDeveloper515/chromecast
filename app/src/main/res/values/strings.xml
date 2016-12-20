@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">RaysCast</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string-array name="items_menu">
+        <item>Local</item>
+        <item>Dropbox</item>
+        <item>Google Drive</item>
+        <item>Url</item>
+        <item>Rate the app</item>
+        <item>Share</item>
+        <item>Send Logs!</item>
+    </string-array>
+
+    <!-- <string name="receiver_id">A4461BAF</string> -->
+    <string name="receiver_id">0058F244</string>
+
+    <string name="bitxId">app.rayscast.air</string>
+    <string name="http">http://</string>
+    <string name="https">https://</string>
+    <string-array name="items_spinner">
+        <item>Videos</item>
+        <item>Audio</item>
+        <item>Images</item>
+        <item>File manager</item>
+    </string-array>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-8920798231622156/5477785221</string>
+    <string name="native_ad_unit_id">ca-app-pub-8920798231622156/9656422829</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string name="history_preferences">History</string>
+    <string name="experimental_preferences">More Settings</string>
+
+    <string name="summary_clear_history_preference">Clear All Links</string>
+    <string name="summary_local_player_preference">Play Video On This Device Instead Of Sending To Chromecast</string>
+    <string name="summary_local_music_player_preference">Play Music On This Device Instead Of Sending To Chromecast</string>
+    <string name="summary_pause_on_ring_preference">Pause Video On Incoming Call</string>
+    <string name="summary_remember_device_preference">Cast To Device Used Previously</string>
+    <string name="title_clear_history_preference">Clear All Links</string>
+    <string name="title_local_player_preference">Local Video Player</string>
+    <string name="title_local_music_player_preference">Local Music Player</string>
+    <string name="title_pause_on_ring_preference">Pause On Call</string>
+    <string name="title_remember_device_preference">Remember Device</string>
+
+    <string name="title_resume_video_from_last_position">Resume Video From Last Position</string>
+    <string name="summary_resume_video_from_last_position">Resume Video From Last Position</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string-array name="Questions">
+        <item>how to cast web media(videos,audios)?</item>
+        <item>"Tap Here for  Casting" button,not being green?</item>
+        <item>why i am seeing many ads?</item>
+        <item>unable to connect chromecast what can i do?</item>
+        <item>video failed to play,what can i do?</item>
+        <item>failed to play some local video,what can i do?</item>
+        <item>still have question?</item>
+    </string-array>
+
+    <string-array name="Answers">
+        <item>browse any media website using cast from web button,check .Tap Here Casting Button. if its being green ,its mean app detected media .tap and  open .Select Link To Cast., select media link and cast it.</item>
+        <item>App not detecting media files ,please wait untill loading finished,if the website contains a media player.start the media and wait some seconds.In case the link is still not detected .open media in full screen mode or try request desktop site.</item>
+        <item>ads are apear on website ,not our and  not controlled by us.however we  blocked  many annoying popup and auto redirection.</item>
+        <item>check your wi-fi connection ,your phone and chromecast must be connected on same network.</item>
+        <item>most video website have multiple video sources available. app will find as many videos as possible ,this means some videos in the page might be missed,try different link if available of under "Select Link To Cast". make sure video can be played in the app browser without flash,or try to change user agent (request desktop website).</item>
+        <item>convert your video in supported format eg.mp4 .mkv</item>
+        <item>send us feedback (using feedback button of app) before leaving any  negative feedback in play store.</item>
+    </string-array>
+
+    <string-array name="m3uPlaylist">
+        <item>http://54.243.231.64:1935/live/dekhotv.mp4/playlist.m3u8</item>
+        <item>http://164.100.49.24:8080/hls-live/livepkgr/_definst_/ddpunjabi.m3u8</item>
+        <item>http://mediacontent-lh.akamaihd.net/i/marathiabpnew_1@188093/master.m3u8</item>
+        <item>http://live.careworldtv.com/live/careworld/playlist.m3u8</item>
+        <item>http://streamer27.eboundservices.com:1935/tv/zeecinema/playlist.m3u8</item>
+        <item>http://38.96.175.192:1943/live/tamilantelevision1/playlist.m3u8</item>
+        <item>http://indiatvnews-lh.akamaihd.net/i/ITV_1@199237//master.m3u8</item>
+        <item>http://edge-ind.inapcdn.in:1935/berry/smarts2.sdp/playlist.m3u8</item>
+        <item>http://etv_marathi-lh.akamaihd.net/i/etv_marathi_n_1@87184/master.m3u8</item>
+        <item>http://studiosystem.co.in:1935/live/namma.stream/playlist.m3u8</item>
+        <item>http://edge-ind.inapcdn.in:1935/hydra/nmtv.sdp_aac/playlist.m3u8</item>
+        <item>http://live.wmncdn.net/sudarshantv/72781e965e0681e980034a778ee7067b.sdp/playlist.m3u8</item>
+        <item>http://edge.purplestream.com/live/captain/amlst:captaintv/playlist.m3u8</item>
+        <item>http://edge.purplestream.com/live/samtv/amlst:samayatv/playlist.m3u8</item>
+        <item>http://streamer27.eboundservices.com:1935/tv/starmovies/playlist.m3u8</item>
+        <item>http://pitelevision.com:1935/pitelevision/starmovies3/playlist.m3u8</item>
+        <item>http://pitelevision.com:1935/pitelevision/filmworld3/playlist.m3u8</item>
+    </string-array>
+</resources>

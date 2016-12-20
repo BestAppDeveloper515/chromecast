@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/history_preferences">
+        <Preference android:title="@string/title_clear_history_preference"
+            android:key="clear_history_button"
+            android:summary="@string/summary_clear_history_preference" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/experimental_preferences">
+        <CheckBoxPreference android:title="@string/title_remember_device_preference"
+            android:key="REMEMBER_CAST_DEVICE"
+            android:summary="@string/summary_remember_device_preference" />
+        <CheckBoxPreference android:title="@string/title_local_player_preference"
+            android:key="USE_LOCAL_PLAYER"
+            android:summary="@string/summary_local_player_preference" />
+        <CheckBoxPreference android:title="@string/title_local_music_player_preference"
+            android:key="USE_LOCAL_MUSICPLAYER"
+            android:summary="@string/summary_local_music_player_preference" />
+        <CheckBoxPreference android:title="@string/title_pause_on_ring_preference"
+            android:key="PAUSE_ON_RING"
+            android:summary="@string/summary_pause_on_ring_preference" />
+        <CheckBoxPreference android:title="@string/title_resume_video_from_last_position"
+            android:key="REMEMBER_LAST_POSITION"
+            android:defaultValue="true"
+            android:summary="@string/summary_resume_video_from_last_position" />
+    </PreferenceCategory>
+</PreferenceScreen>

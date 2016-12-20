@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+        <!--android:id="@+id/action_search_web_content"-->
+        <!--android:orderInCategory="99"-->
+        <!--android:title="Search"-->
+        <!--android:visible="false"-->
+        <!--app:actionViewClass="android.support.v7.widget.SearchView"-->
+        <!--app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/action_scan"
+        android:orderInCategory="100"
+        android:title="Select Link To Cast"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_history"
+        android:orderInCategory="100"
+        android:title="Check History"
+        app:showAsAction="never" />
+    <!--<item-->
+        <!--android:id="@+id/action_add_link_m3u"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="M3U Channel"-->
+        <!--app:showAsAction="never"/>-->
+    <item
+        android:id="@+id/action_favorite"
+        android:orderInCategory="100"
+        android:title="Add Bookmark"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/my_bookmark"
+        android:orderInCategory="100"
+        android:title="My Bookmark"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/refresh_page"
+        android:orderInCategory="100"
+        android:title="Reload Page"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_useragent"
+        android:orderInCategory="100"
+        android:title="Request DesktopSite"
+        android:visible="true"
+        android:checkable="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="Help"
+        app:showAsAction="never" />
+
+
+    app:showAsAction="never" />
+</menu>

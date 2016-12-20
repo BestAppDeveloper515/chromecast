@@ -1,0 +1,3 @@
+include ':app', ':CastCompanionLibrary'
+include ':dropboxChooserSDK'
+include ':asyncSubtitlesLib'

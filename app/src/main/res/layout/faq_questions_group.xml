@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/_50ROR"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:padding="8dp">
+    <TextView
+        android:layout_weight=".2"
+        android:id="@+id/lblListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/_15ROR"
+        android:gravity="center_vertical"
+        android:text="Hellllllllllllllllllllll"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:layout_weight=".8"
+        android:id="@+id/image_view_for_exp_list_indicator"
+        android:padding="@dimen/_5ROR"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

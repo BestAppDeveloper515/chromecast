@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="closed_caption_click_options">
+        <item>SEARCH OPENSUBTITLES.ORG</item>
+        <item>SELECT FILE</item>
+    </string-array>
+</resources>

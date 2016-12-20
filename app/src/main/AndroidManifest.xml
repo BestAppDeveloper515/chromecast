@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.rayscast.air">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.READ_LOGS" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".utils.ChromecastApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Splash screen -->
+        <activity android:name=".activity.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:mimeType="video/mp4" />
+                <data android:mimeType="application/mp4" />
+                <data android:mimeType="video/webm" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+                <data android:pathPattern=".*mp4" />
+                <data android:pathPattern=".*MP4" />
+                <data android:pathPattern=".*\\.mp4" />
+                <data android:pathPattern=".*\\.MP4" />
+                <data android:pathPattern=".*webm" />
+                <data android:pathPattern=".*WEBM" />
+                <data android:pathPattern=".*\\.webm" />
+                <data android:pathPattern=".*\\.WEBM" />
+                <data android:pathPattern=".*m3u8" />
+                <data android:pathPattern=".*M3U8" />
+                <data android:pathPattern=".*\\.m3u8" />
+                <data android:pathPattern=".*\\.M3U8" />
+            </intent-filter>
+            <intent-filter>
+                !-- HTTP live support -->;
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:mimeType="audio/x-mpegurl" />
+                <data android:mimeType="audio/mpegurl" />
+                <data android:mimeType="application/vnd.apple.mpegurl" />
+                <data android:mimeType="application/x-mpegurl" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="video/*" />
+
+                <!-- <data android:mimeType="application/x-quicktimeplayer*" /> -->
+                <!-- <data android:mimeType="application/x-mpeg" /> -->
+                <!-- <data android:mimeType="application/vnd.dvd*" /> -->
+                <!-- <data android:mimeType="application/vnd.3gp*" /> -->
+                <!-- <data android:mimeType="application/3gpp*" /> -->
+                <!-- <data android:mimeType="application/vnd.rn-realmedia*" /> -->
+                <!-- <data android:mimeType="application/mp4*" /> -->
+                <!-- <data android:mimeType="application/mpeg*" /> -->
+                <!-- <data android:mimeType="application/sdp" /> -->
+                <!-- <data android:mimeType="application/vnd.wap.mms-message" /> -->
+
+
+                <!-- <data android:pathPattern=".*mkv" /> -->
+                <!-- <data android:pathPattern=".*MKV" /> -->
+
+
+                <!-- <data android:pathPattern=".*flv" /> -->
+                <!-- <data android:pathPattern=".*FLV" /> -->
+
+
+                <!-- <data android:pathPattern=".*wmv" /> -->
+                <!-- <data android:pathPattern=".*WMV" /> -->
+
+
+                <!-- <data android:pathPattern=".*ts" /> -->
+                <!-- <data android:pathPattern=".*TS" /> -->
+
+
+                <!-- <data android:pathPattern=".*rm" /> -->
+                <!-- <data android:pathPattern=".*RM" /> -->
+
+
+                <!-- <data android:pathPattern=".*rmvb" /> -->
+                <!-- <data android:pathPattern=".*RMVB" /> -->
+
+
+                <!-- <data android:pathPattern=".*webm" /> -->
+                <!-- <data android:pathPattern=".*WEBM" /> -->
+
+
+                <!-- <data android:pathPattern=".*mov" /> -->
+                <!-- <data android:pathPattern=".*MOV" /> -->
+
+
+                <!-- <data android:pathPattern=".*mpg" /> -->
+                <!-- <data android:pathPattern=".*MPG" /> -->
+
+
+                <!-- <data android:pathPattern=".*dat" /> -->
+                <!-- <data android:pathPattern=".*DAT" /> -->
+
+
+                <!-- <data android:pathPattern=".*vstream" /> -->
+                <!-- <data android:pathPattern=".*VSTREAM" /> -->
+
+
+                <!-- <data android:pathPattern=".*mpeg" /> -->
+                <!-- <data android:pathPattern=".*MPEG" /> -->
+
+
+                <!-- <data android:pathPattern=".*f4v" /> -->
+                <!-- <data android:pathPattern=".*F4V" /> -->
+
+
+                <!-- <data android:pathPattern=".*avi" /> -->
+                <!-- <data android:pathPattern=".*AVI" /> -->
+
+
+                <!-- <data android:pathPattern=".*ogv" /> -->
+                <!-- <data android:pathPattern=".*OGV" /> -->
+
+
+                <!-- <data android:pathPattern=".*dv" /> -->
+                <!-- <data android:pathPattern=".*DV" /> -->
+
+
+                <!-- <data android:pathPattern=".*divx" /> -->
+                <!-- <data android:pathPattern=".*DIVX" /> -->
+
+
+                <!-- <data android:pathPattern=".*vob" /> -->
+                <!-- <data android:pathPattern=".*VOB" /> -->
+
+
+                <!-- <data android:pathPattern=".*asf" /> -->
+                <!-- <data android:pathPattern=".*ASF" /> -->
+
+
+                <!-- <data android:pathPattern=".*3gp" /> -->
+                <!-- <data android:pathPattern=".*3GP" /> -->
+
+
+                <!-- <data android:pathPattern=".*3gpp" /> -->
+                <!-- <data android:pathPattern=".*3GPP" /> -->
+
+
+                <!-- <data android:pathPattern=".*h264" /> -->
+                <!-- <data android:pathPattern=".*H264" /> -->
+
+
+                <!-- <data android:pathPattern=".*h261" /> -->
+                <!-- <data android:pathPattern=".*H261" /> -->
+
+
+                <!-- <data android:pathPattern=".*h263" /> -->
+                <!-- <data android:pathPattern=".*H263" /> -->
+                <data android:mimeType="application/x-quicktimeplayer*" />
+                <data android:mimeType="application/x-mpeg" />
+                <data android:mimeType="application/vnd.dvd*" />
+                <data android:mimeType="application/vnd.3gp*" />
+                <data android:mimeType="application/3gpp*" />
+                <data android:mimeType="application/mp4*" />
+                <data android:mimeType="application/mpeg*" />
+                <data android:mimeType="application/vnd.apple.mpegurl" />
+                <data android:mimeType="application/x-mpegurl" />
+                <data android:pathPattern=".*mkv" />
+                <data android:pathPattern=".*MKV" />
+                <data android:pathPattern=".*mp4" />
+                <data android:pathPattern=".*MP4" />
+                <data android:pathPattern=".*ts" />
+                <data android:pathPattern=".*TS" />
+                <data android:pathPattern=".*webm" />
+                <data android:pathPattern=".*WEBM" />
+                <data android:pathPattern=".*mpg" />
+                <data android:pathPattern=".*MPG" />
+                <data android:pathPattern=".*mpeg" />
+                <data android:pathPattern=".*MPEG" />
+                <data android:pathPattern=".*3gp" />
+                <data android:pathPattern=".*3GP" />
+                <data android:pathPattern=".*3gpp" />
+                <data android:pathPattern=".*3GPP" />
+                <data android:pathPattern=".*h264" />
+                <data android:pathPattern=".*H264" />
+                <data android:pathPattern=".*m3u8" />
+                <data android:pathPattern=".*M3U8" />
+                <data android:pathPattern=".*\\.m3u8" />
+                <data android:pathPattern=".*\\.M3U8" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:mimeType="audio/*" />
+                <data android:pathPattern=".*\\.mp3" />
+                <data android:pathPattern=".*\\.MP3" />
+                <data android:pathPattern=".*\\.aac" />
+                <data android:pathPattern=".*\\.AAC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="*" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.libraries.cast.companionlibrary.cast.player.VideoCastControllerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CastPlayerTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rayscast.air.activity.MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.google.android.libraries.cast.companionlibrary.notification.VideoCastNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.notificationvisibility" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.android.libraries.cast.companionlibrary.cast.reconnection.ReconnectionService" />
+
+        <receiver android:name="com.google.android.libraries.cast.companionlibrary.remotecontrol.VideoIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.toggleplayback" />
+                <action android:name="com.google.android.libraries.cast.companionlibrary.action.stop" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="1465c16ad9a8d608cb028a2b17cf14959f49adf6" />
+
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rayscast.air.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.SubtitleDownloadActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rayscast.air.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.HelpActivity"
+            android:label="Help"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.rayscast.air.activity.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

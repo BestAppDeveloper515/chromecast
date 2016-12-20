@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <!-- <group
+        android:id="@+id/nav_for_local"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/icon_video"
+            android:title="Videos" />
+        <item
+            android:id="@+id/nav_audio"
+            android:icon="@drawable/icon_audio"
+            android:title="Audio" />
+        <item
+            android:id="@+id/nav_image"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_webbrowser"
+            android:icon="@mipmap/ic_webbrowser"
+            android:title="Web Browser" />
+    </group>
+
+    <group
+        android:id="@+id/nav_for_internet"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_dropbox"
+            android:icon="@drawable/icon_dropbox"
+            android:title="Dropbox" />
+        <item
+            android:id="@+id/nav_url"
+            android:icon="@drawable/icon_url"
+            android:title="Add Link" />
+    </group>
+    -->
+
+  <item
+      android:id="@+id/action_home"
+      android:icon="@drawable/home_new_max_icon"
+      android:title="Home" />
+
+
+    <item
+        android:id="@+id/nav_rate"
+        android:icon="@drawable/rate_new_max_icon"
+        android:title="Rate the app" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/help_new_max_icon"
+        android:title="Help" />
+
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/share_new_max_icon"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/nav_facebook"
+        android:icon="@drawable/fb_new_max_icon"
+        android:title="Facebook" />
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:icon="@drawable/feedback_new_max_icon"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/settings_new_max_icon"
+        android:title="Settings" />
+</menu>

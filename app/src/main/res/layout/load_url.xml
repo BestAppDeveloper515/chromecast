@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/paste_url_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Paste an url or type it to load it to Chromecast"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/paste_url_title"
+        android:background="@color/red" />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_top"
+        android:layout_margin="8dp"
+        android:background="@drawable/apptheme_edit_text_holo_light"
+        android:hint="" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/url"
+        android:visibility="invisible"
+        android:background="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/list_history"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/line2"
+        android:background="#F5F1F0"
+        android:layout_below="@+id/line1"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="invisible"
+        android:layout_above="@+id/delete_history"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@id/delete_history"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Delete history"
+        android:textStyle="bold"
+        android:textColor="@color/mainColor"
+        android:layout_above="@+id/line3"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/button_layout"
+        android:background="@color/red" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="@string/ccl_cancel"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="Cast"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

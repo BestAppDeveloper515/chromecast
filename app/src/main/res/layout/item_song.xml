@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+    <ImageView
+        android:id="@+id/img_list_all"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/audio_icon_hdpi"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/linData"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/img_list_all"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtSongTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+             />
+
+        <TextView
+            android:id="@+id/txtArtistTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Artist Title"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_below="@+id/linData"
+        android:background="#FFF" />
+</RelativeLayout>

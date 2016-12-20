@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.rayscast.air.activity.MainActivity"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:id="@+id/navigation_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="55dp"
+        android:layout_above="@+id/miniController" />
+
+    <RelativeLayout
+        android:id="@+id/navigation_audio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="55dp"
+        android:visibility="gone"
+        android:layout_above="@+id/miniController" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pager_header"
+                android:background="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp" />
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+    <com.google.android.libraries.cast.companionlibrary.widgets.MiniController
+        android:id="@+id/miniController"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#555753"
+        android:layout_above="@+id/adView"
+
+        android:visibility="gone"
+        app:auto_setup="true" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

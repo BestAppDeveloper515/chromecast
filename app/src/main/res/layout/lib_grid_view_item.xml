@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_container_image_view"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/_15ROR"
+        android:layout_marginRight="@dimen/_15ROR"
+        android:layout_marginTop="@dimen/_20ROR"
+        android:layout_height="@dimen/_125ROR">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/rectangle_inner" />
+        <ImageView
+            android:layout_width="@dimen/_65ROR"
+            android:layout_height="@dimen/_40ROR"
+            android:background="@drawable/video_icon_hdpi"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_10ROR"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#70000000"
+            android:gravity="start|center_vertical"
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="2"
+            android:paddingLeft="@dimen/_10ROR"
+            android:paddingRight="1dp"
+            android:text="Test video name.mp4"
+            android:textColor="#FFF"
+            android:textSize="@dimen/time_lib_text_size"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20ROR"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/_15ROR"
+        android:layout_marginRight="@dimen/_15ROR"
+        android:layout_below="@+id/frame_container_image_view"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_5ROR"
+            android:text="00:00:00"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/red"
+            android:textSize="@dimen/time_lib_text_size" />
+
+        <TextView
+            android:id="@+id/extension"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/duration"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:paddingRight="@dimen/_5ROR"
+            android:text="MP4"
+            android:textColor="@color/red"
+            android:textSize="@dimen/time_lib_text_size" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.rayscast.air.fragments.SongListFragment">
+
+    <ListView
+        android:id="@+id/list_song"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_xxhdpi"
+        android:choiceMode="singleChoice">
+    </ListView>
+
+</FrameLayout>

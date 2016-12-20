@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_66ROR"
+    android:background="@color/white"
+    android:minHeight="55dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ray_cast_xxhdpi"
+        android:paddingRight="@dimen/_30ROR"
+        android:paddingLeft="@dimen/_30ROR"
+        android:paddingTop="@dimen/_30ROR"
+        android:paddingBottom="@dimen/_5ROR"
+        android:scaleType="fitXY"/>
+
+</FrameLayout>
